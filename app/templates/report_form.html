@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h2>Submit a Report</h2>
+  <form method="POST">
+    <label for="category">Category:</label>
+    <input type="text" name="category" required><br>
+    <label for="description">Description:</label><br>
+    <textarea name="description" rows="5" cols="30" required></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h2>Submitted Reports</h2>
+  <ul>
+    {% for report in reports %}
+      <li><strong>{{ report.category }}</strong>: {{ report.description }}</li>
+    {% else %}
+      <li>No reports found.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
